@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTreeTableView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="387.0" prefWidth="688.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.TelaHistoricoVendaController">
+   <children>
+      <ImageView fx:id="background" fitHeight="387.0" fitWidth="688.0" pickOnBounds="true">
+         <image>
+            <Image url="@../background.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="logoLabel" layoutX="15.0" layoutY="14.0" text="DeskCAR" textFill="#e6e6e6">
+         <font>
+            <Font name="Poor Richard" size="40.0" />
+         </font>
+      </Label>
+      <JFXTreeTableView fx:id="saleHistoryTable" layoutX="15.0" layoutY="81.0" onMouseClicked="#saleHistoryTableAction" prefHeight="292.0" prefWidth="659.0" />
+      <AnchorPane fx:id="historicDatailsPanel" layoutX="137.0" layoutY="14.0" prefHeight="360.0" prefWidth="415.0" style="-fx-background-color: #303030;" visible="false">
+         <children>
+            <Label layoutX="36.0" layoutY="16.0" text="Modelo do Veículo:" textFill="#e6e6e6">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="92.0" layoutY="48.0" text="Atributos:" textFill="#e6e6e6">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="113.0" layoutY="121.0" text="Valor:" textFill="#e6e6e6">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="detailsModel" layoutX="158.0" layoutY="17.0" prefHeight="17.0" prefWidth="235.0" textFill="WHITE">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="detailsAttributes" layoutX="158.0" layoutY="48.0" prefHeight="65.0" prefWidth="235.0" textFill="WHITE">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="detailsValue" layoutX="158.0" layoutY="121.0" prefHeight="17.0" prefWidth="235.0" textFill="WHITE">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="detailsBack" layoutX="233.0" layoutY="306.0" onAction="#detailsBackAction" prefHeight="40.0" prefWidth="168.0" style="-fx-background-color: #e6e6e6;" text="Voltar" />
+            <Label layoutX="79.0" layoutY="186.0" text="Comprador:" textFill="#e6e6e6">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="122.0" layoutY="214.0" text="CPF:" textFill="#e6e6e6">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="113.0" layoutY="242.0" text="Email:" textFill="#e6e6e6">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="96.0" layoutY="270.0" text="Telefone:" textFill="#e6e6e6">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="detailsBuyerName" layoutX="158.0" layoutY="186.0" prefHeight="17.0" prefWidth="235.0" textFill="WHITE">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="detailsBuyerCPF" layoutX="158.0" layoutY="214.0" prefHeight="17.0" prefWidth="235.0" textFill="WHITE">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="detailsBuyerEmail" layoutX="164.0" layoutY="242.0" prefHeight="17.0" prefWidth="235.0" textFill="WHITE">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="detailsBuyerPhone" layoutX="164.0" layoutY="270.0" prefHeight="17.0" prefWidth="235.0" textFill="WHITE">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
